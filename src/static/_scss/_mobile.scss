@@ -55,6 +55,11 @@
   }
 
   @include mediaSm{
+    .skills-icons__wrapper{
+        .icons{
+          justify-content: space-between
+        } 
+      }
     .menu-item{
         padding: 0 10px;
     }
