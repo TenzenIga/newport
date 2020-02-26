@@ -24,7 +24,7 @@ body{
 }
 .main{
   position: relative;
-  height: 100vh;
+  height: calc(100vh + 53px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -143,7 +143,7 @@ nav{
 /* About */
 
 .about{
-  margin-top: 50px;
+  // margin-top: 50px;
   &-body{
     line-height: 150%;
     margin-top: 90px;
