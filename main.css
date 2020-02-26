@@ -32,7 +32,7 @@ body {
 
 .main {
   position: relative;
-  height: 100vh;
+  height: calc(100vh + 53px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -167,11 +167,9 @@ nav {
     display: none; }
 
 /* About */
-.about {
-  margin-top: 50px; }
-  .about-body {
-    line-height: 150%;
-    margin-top: 90px; }
+.about-body {
+  line-height: 150%;
+  margin-top: 90px; }
 
 .skills-icons__wrapper {
   display: -webkit-box;
