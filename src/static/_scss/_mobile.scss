@@ -1,0 +1,67 @@
+
+
+@include mediaMd{
+    nav{
+        align-items: center;
+        .pages{
+            height: 0;
+            flex-direction: column;
+            position: absolute;
+            background: #333;
+            top: 50px;
+            margin-left: 0;
+            width: 100%;
+            transition: height 0.3s ease-out;
+            overflow:hidden;
+            & > *:not(:first-child){
+                margin-left: 0;
+              }
+            &.show{
+                
+                height: 150px;
+               
+                
+                & > * {
+                    margin-left: 0;
+                    text-transform: uppercase;
+                    padding: 15px;
+                    text-align: center;
+                  }
+            }  
+        }
+        .fa-bars{
+            position: absolute;
+            display: block;
+            right: 10px;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+    }
+    .menu-item{
+        font-size: 13pt;
+        margin: 0 15px;
+        padding: 0 30px;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .menu-item{
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+  
+  }
+
+  @include mediaSm{
+    .menu-item{
+        padding: 0 10px;
+    }
+    .card{
+        &-bg{
+            width: 280px;
+            height: 250px;
+        }
+    }
+}

@@ -1,0 +1,118 @@
+extends ../layout/main
+
+
+block title
+  | Portfolio
+  
+  
+
+block content
+  section#main.main
+    .background#particles-js
+    .main-info
+      .text Hello, <span class='text-color'>I'm Gajizade Arhan</span>.<br/>I'm a frontend developer.
+      a#viewBtn.view-btn View my work
+         i.fas.fa-arrow-right
+  nav#navbar
+    .pages
+      .page-link.active(data-name='main') Home
+      .page-link(data-name='about') About
+      .page-link(data-name='works') Work
+    i.fas.fa-bars#burger
+  section#about.about
+    .page-container
+      .heading.waypoint
+          .heading__text About
+          .heading__underline
+      .about-body.waypoint
+        p I'm a Frontend Developer from Saint-Petersburg, Russia. I have a passion for JavaScript and coding in general.<br> While I work mostly with UI, I also enjoy getting involved in back-end development with Node JS.<br> I build responsive, mobile first websites and cool Single Page Application with React framework. Let's make something special.
+        .skills-icons__wrapper
+          .frontend__skills.icons
+            h3.sm-heading Frontend 
+            i.devicon-html5-plain-wordmark.colored.waypoint
+            i.devicon-css3-plain-wordmark.colored.waypoint
+            i.devicon-sass-original.waypoint
+            i.devicon-bootstrap-plain-wordmark.colored.waypoint
+            i.devicon-jquery-plain-wordmark.colored.waypoint
+            i.devicon-javascript-plain.colored.waypoint
+            i.devicon-react-original-wordmark.colored.waypoint
+            i.devicon-angularjs-plain.colored.waypoint
+          .backend__skills.icons
+            h3.sm-heading Backend
+            i.devicon-nodejs-plain-wordmark.colored.waypoint
+            i.devicon-typescript-plain.colored.waypoint
+            i.devicon-php-plain.waypoint
+            i.devicon-mongodb-plain-wordmark.colored.waypoint
+            i.devicon-mysql-plain-wordmark.waypoint
+  section#works.works
+    .page-container
+      .heading.waypoint
+          .heading__text Projects
+          .heading__underline
+      .menu-wrapper.waypoint
+        .menu
+          .menu-item(data-filter='all') ALL
+          .menu-item(data-filter='.js') JavaScript
+          .menu-item(data-filter='.react') React
+          .menu-item(data-filter='.angular') Angular
+        .float-menu
+          .menu
+            .menu-item(data-filter='all') ALL
+            .menu-item(data-filter='.js') JavaScript
+            .menu-item(data-filter='.react') React
+            .menu-item(data-filter='.angular') Angular
+      .projects.waypoint
+        .card.mix.react
+          .card-bg
+          .card-text
+            .card-heading Game of life
+            .card-desc React / Redux
+          a( target='_blank' href='https://tenzeniga.github.io/game-of-life/').card-btn LEARN MORE
+        .card.mix.react
+          .card-bg
+          .card-text
+            .card-heading Searching API
+            .card-desc React / TypeScript
+          a( target='_blank' href='https://tenzeniga.github.io/react-ts-search/').card-btn LEARN MORE
+        .card.mix.react
+          .card-bg
+          .card-text
+            .card-heading Chat app
+            .card-desc React
+          a( target='_blank' href='https://react-chat-app16.herokuapp.com/').card-btn LEARN MORE
+        .card.mix.react
+          .card-bg
+          .card-text
+            .card-heading Shopping Cart
+            .card-desc React
+          a( target='_blank' href='https://tenzeniga.github.io/shopping-cart/').card-btn LEARN MORE
+        .card.mix.js
+          .card-bg
+          .card-text
+            .card-heading Calculator
+            .card-desc JavaScript
+          a( target='_blank' href='https://tenzeniga.github.io/calculator.github.io/').card-btn LEARN MORE
+        .card.mix.angular
+          .card-bg
+          .card-text
+            .card-heading Voting App
+            .card-desc Angular
+          a( target='_blank' href='https://meanvoting-app.herokuapp.com/#/').card-btn LEARN MORE
+        .card.mix.react
+          .card-bg
+          .card-text
+            .card-heading Tic Tack Toe
+            .card-desc JavaScript
+          a( target='_blank' href='https://tenzeniga.github.io/Tic-tac-toe-game/').card-btn LEARN MORE
+        .card.mix.react
+          .card-bg
+          .card-text
+            .card-heading Pomodoro timer
+            .card-desc React
+          a( target='_blank' href='https://tenzeniga.github.io/react-pomodoro/').card-btn LEARN MORE
+        .card.mix.js
+          .card-bg
+          .card-text
+            .card-heading Simon Game
+            .card-desc JavaScript
+          a( target='_blank' href='https://tenzeniga.github.io/simon_game/').card-btn LEARN MORE

@@ -1,0 +1,348 @@
+@import 'config';
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body{
+  font-family: 'Raleway';
+  margin: 0;
+  
+}
+.page-container{
+  width: 90%;
+  margin: 0 auto;
+  padding: 100px 0 130px;
+  align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.main{
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 2.6rem; 
+  background: rgb(37,41,52);
+  &-info{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .text{
+    text-align: center;
+    font-weight:500;
+    line-height: 150%;
+  }
+  .text-color{
+    color: #e31b6d;
+  }
+  .view-btn{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-top: 20px;
+    border: 2px solid #fff;
+    padding: 10px 15px;
+    transition: all .5s ease;
+    cursor: pointer;
+    &:hover{
+      background: #04c2c9;
+      border-color: #04c2c9;
+    }
+    &:hover .fa-arrow-right{
+      transform: rotate(90deg);
+    }
+  }
+}
+.fa-arrow-right{
+  transform:translate(0, 0);
+  margin-left: 5px;
+  font-size: 1rem;
+  transition: all .5s ease;
+}
+.background {
+  background: rgb(37,41,52);
+  position:  absolute;
+  display:  block;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  }
+  .heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #444649;
+    text-align: center;
+    font-size: 2.6rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    &__underline{
+      margin-top: 10px;
+      width: 70px;
+      height: 4px;
+      background: #444649;
+    }
+  }
+  /* Navigation */
+nav{
+  display: flex;
+  position: absolute;
+  bottom: -50px;
+  left: 0;  
+  background: #1b242f;
+  border-bottom: 3px solid #04c2c9;
+  height: 50px;
+  text-align: left;
+  width: 100%;
+  color: #fff;
+  z-index: 99;
+  &.fixed{
+    position: fixed;
+    top: 0;
+    bottom:0;
+  }
+  .pages{
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    & > *:not(:first-child){
+      margin-left: 55px;
+    }
+  }
+  .page-link{
+     text-transform: uppercase;
+     cursor: pointer;
+     transition: color 0.5s;
+    &.active{
+      color:#e31b6d;
+    }
+    &:hover{
+      color:#e31b6d;
+      }
+    } 
+  .fa-bars{
+    display: none;
+    }
+  }
+
+/* About */
+
+.about{
+  margin-top: 50px;
+  &-body{
+    line-height: 150%;
+    margin-top: 90px;
+  }
+}
+.skills-icons__wrapper{
+  display: flex; 
+  .icons{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    h3{
+      color: #444649;
+      font-size: 1.5em;
+      text-align: center;
+      flex: 1 100%;
+      padding: 10px 0;
+    }
+    i {
+      font-size: 6em;
+      padding: 10px;
+    }
+  } 
+}
+
+.waypoint{
+  opacity: 0;
+}
+.animated{
+  opacity: 1;
+}
+
+/* Works */
+.works{
+  background: #f5f5f5;
+}
+
+.menu-wrapper{
+  margin-top: 100px;
+  position:relative;
+  white-space:nowrap;
+}
+.menu{
+  display:flex;
+  margin:auto;
+  align-items:center;
+  justify-content:center;
+}
+.float-menu{
+  height: 30px;
+  background:#e31b6d;
+  position:absolute;
+  bottom:0;
+  top:0;
+  margin:auto;
+  overflow:hidden;
+  left:30px;
+  transition: all 0.5s ease-in-out;
+}
+.menu-item{
+    font-size: 13pt;
+    margin: 0 25px;
+    padding: 0 40px;
+    cursor: pointer;
+}
+.float-menu .menu{
+  left: -30px;
+    color:#fff;
+    bottom: 0;
+    position: absolute;
+    top: 0;
+    transition: left 0.5s ease-in-out;
+}
+
+.projects{
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  
+ 
+  &:nth-child(1) &-bg{
+    background: url('../img/game.jpg') center center/cover;
+    
+    }
+  &:nth-child(2) &-bg{
+    background: url(../img/l9h4mcz1eeq4sajcrbeaba.png) center center/cover;
+    }
+  &:nth-child(3) &-bg{
+    background: url('../img/b69zehwza8uchxjagwibdxclmynxrp.png') center center/cover;
+    }
+  &:nth-child(4) &-bg{
+    background: url(../img/101040-abandoned-cart-carritos.jpg) center center/cover;
+    
+    }
+  &:nth-child(5) &-bg{
+    background: url(../img/https___tenzeniga.github.io_calculator.github.io_-800x0b1024x768_402x302.jpg) center center/cover;
+    }
+  &:nth-child(6) &-bg{
+    background: url('../img/spu-ea68c8-ogi2-3cwn3bmfojjlb56e.jpg') center center/cover;
+    }
+  &:nth-child(7) &-bg{
+    background: url(../img/10985023-tic-tac-toe-winning-crosses-and-zeros-isolated-on-white-background.jpg) center center/cover;
+    
+    }
+  &:nth-child(8) &-bg{
+    background: url(../img/pomodoro-tech.jpg) center center/cover;
+    }
+  &:nth-child(9) &-bg{
+    background: url('../img/https___tenzeniga.github.io_simon_game_-800x0b1024x768_402x302.jpg') center center/cover;
+    }
+  &-bg{
+    width: 390px;
+    height: 300px;
+    transition: all .3s ease;
+  }
+  &-text{
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: all .3s ease;
+  }
+  &-heading{
+    font-size: 1.2rem;
+    font-weight: bolder;
+  }
+  &-desc{
+    font-size: 1rem;
+  }
+  &-btn{
+    text-decoration: none;
+    color: #1b242f;
+    position: absolute;
+    bottom: 0;
+    border: 2px solid #e31b6d;
+    padding: 7px 10px;
+    opacity: 0;
+    transition: all .3s ease;
+    &:hover{
+      background: #e31b6d;
+      color: #fff;
+    }
+  }
+  &:hover &-bg{
+    opacity: 0;
+  }
+  &:hover &-text{
+    top:28%;
+    opacity: 1;
+  }
+  &:hover &-btn{
+    opacity: 1;
+    bottom:28%;
+  }
+  
+}
+
+
+/* footer */
+footer{
+  padding: 70px 0 50px 0;
+  background: #1b242f;
+  .social{
+    display: flex;
+    justify-content: center;
+    li{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #262f38;
+      cursor: pointer;
+      font-size: 1.4rem;
+      height: 55px;
+      margin: 0 15px;
+      overflow: hidden;
+      position: relative;
+      text-align: center;
+      transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s;
+      width: 55px;
+      &:hover{
+        background: #04c2c9;
+      box-shadow: 0 0 0 3px rgba(4, 94, 201, 0.1);
+      transform: scale(0.9);
+      }
+    }
+    a{
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+
+}
+
+@import 'mobile';
