@@ -133,8 +133,6 @@ nav {
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  bottom: -50px;
-  left: 0;
   background: #1b242f;
   border-bottom: 3px solid #04c2c9;
   height: 50px;
@@ -424,6 +422,10 @@ footer {
     padding: 0 20px; } }
 
 @media screen and (max-width: 500px) {
+  .skills-icons__wrapper .icons {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
   .menu-item {
     padding: 0 10px; }
   .card-bg {
