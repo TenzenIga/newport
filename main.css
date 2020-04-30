@@ -311,18 +311,23 @@ nav {
   .card-desc {
     font-size: 1rem; }
   .card-btn {
-    text-decoration: none;
-    color: #1b242f;
     position: absolute;
     bottom: 0;
-    border: 2px solid #e31b6d;
-    padding: 7px 10px;
     opacity: 0;
     -webkit-transition: all .3s ease;
     transition: all .3s ease; }
-    .card-btn:hover {
-      background: #e31b6d;
-      color: #fff; }
+    .card-btn a {
+      text-decoration: none;
+      color: #1b242f;
+      padding: 7px 10px;
+      border: 2px solid #e31b6d;
+      -webkit-transition: all .3s ease;
+      transition: all .3s ease; }
+      .card-btn a:hover {
+        background: #e31b6d;
+        color: #fff; }
+    .card-btn__git {
+      margin-left: 3px; }
   .card:hover .card-bg {
     opacity: 0; }
   .card:hover .card-text {
