@@ -283,17 +283,24 @@ nav{
     font-size: 1rem;
   }
   &-btn{
-    text-decoration: none;
-    color: #1b242f;
     position: absolute;
     bottom: 0;
-    border: 2px solid #e31b6d;
-    padding: 7px 10px;
     opacity: 0;
     transition: all .3s ease;
-    &:hover{
-      background: #e31b6d;
-      color: #fff;
+    a{
+      text-decoration:none ;
+      color: #1b242f;
+      padding: 7px 10px;
+      border: 2px solid #e31b6d;
+      transition: all .3s ease;
+      &:hover{
+        background: #e31b6d;
+        color: #fff;
+        }
+    }
+    &__git{
+      margin-left: 3px;
+    
     }
   }
   &:hover &-bg{
@@ -307,6 +314,7 @@ nav{
     opacity: 1;
     bottom:28%;
   }
+
   
 }
 
@@ -315,6 +323,7 @@ nav{
 footer{
   padding: 70px 0 50px 0;
   background: #1b242f;
+  
   .social{
     display: flex;
     justify-content: center;
