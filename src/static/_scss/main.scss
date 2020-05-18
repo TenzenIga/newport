@@ -134,6 +134,17 @@ nav{
     &:hover{
       color:#e31b6d;
       }
+     & a{
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.5s;
+      &.active{
+        color:#e31b6d;
+      }
+      &:hover{
+        color:#e31b6d;
+        }
+    }
     } 
   .fa-bars{
     display: none;

@@ -163,6 +163,15 @@ nav {
       color: #e31b6d; }
     nav .page-link:hover {
       color: #e31b6d; }
+    nav .page-link a {
+      color: #fff;
+      text-decoration: none;
+      -webkit-transition: color 0.5s;
+      transition: color 0.5s; }
+      nav .page-link a.active {
+        color: #e31b6d; }
+      nav .page-link a:hover {
+        color: #e31b6d; }
   nav .fa-bars {
     display: none; }
 

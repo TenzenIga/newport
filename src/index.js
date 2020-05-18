@@ -77,3 +77,7 @@ function scrollToSection(){
 var mixer = mixitup(projects);  
 
  
+/*
+how to push to gh pages
+git subtree push --prefix dist origin gh-pages
+*/
