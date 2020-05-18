@@ -2,8 +2,7 @@ import style from "./static/_scss/main.scss";
 import mixitup from 'mixitup';
 import 'particles.js';
 
-import { pathToFileURL } from "url";
-const url = pathToFileURL
+
 particlesJS.load('particles-js', 'src/particlesjs-config.json', function() {
   console.log('callback - particles.js config loaded');
 });
