@@ -303,6 +303,8 @@ nav {
     background: url(src/static/img/pomodoro-tech.jpg) center center/cover; }
   .card:nth-child(10) .card-bg {
     background: url(src/static/img/https___tenzeniga.github.io_simon_game_-800x0b1024x768_402x302.jpg) center center/cover; }
+  .card:nth-child(11) .card-bg {
+    background: url(src/static/img/forms.png) center center/cover; }
   .card-bg {
     width: 390px;
     height: 300px;
