@@ -234,6 +234,7 @@ nav{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  min-height: 50vh;
 }
 .card{
   display: flex;
@@ -243,39 +244,45 @@ nav{
   cursor: pointer;
   
   &:nth-child(1) &-bg{
+    background: url('../img/movies.jpg') center center/cover;
+    
+    }
+
+  &:nth-child(2) &-bg{
     background: url('../img/pizza.png') center center/cover;
     
     }
-  &:nth-child(2) &-bg{
+  &:nth-child(3) &-bg{
+    background: url('../img/spu-ea68c8-ogi2-3cwn3bmfojjlb56e.jpg') center center/cover;
+  }
+  &:nth-child(4) &-bg{
     background: url('../img/game.jpg') center center/cover;
   }
-  &:nth-child(3) &-bg{
+  &:nth-child(5) &-bg{
     background: url('../img/l9h4mcz1eeq4sajcrbeaba.png') center center/cover;
     }
-  &:nth-child(4) &-bg{
+  &:nth-child(6) &-bg{
     background: url('../img/b69zehwza8uchxjagwibdxclmynxrp.png') center center/cover;
     }
-  &:nth-child(5) &-bg{
+  &:nth-child(7) &-bg{
     background: url(../img/101040-abandoned-cart-carritos.jpg) center center/cover;
     
     }
-  &:nth-child(6) &-bg{
+  &:nth-child(8) &-bg{
     background: url(../img/https___tenzeniga.github.io_calculator.github.io_-800x0b1024x768_402x302.jpg) center center/cover;
     }
-  &:nth-child(7) &-bg{
-    background: url('../img/spu-ea68c8-ogi2-3cwn3bmfojjlb56e.jpg') center center/cover;
-    }
-  &:nth-child(8) &-bg{
+
+  &:nth-child(9) &-bg{
     background: url(../img/10985023-tic-tac-toe-winning-crosses-and-zeros-isolated-on-white-background.jpg) center center/cover;
     
     }
-  &:nth-child(9) &-bg{
+  &:nth-child(10) &-bg{
     background: url(../img/pomodoro-tech.jpg) center center/cover;
     }
-  &:nth-child(10) &-bg{
+  &:nth-child(11) &-bg{
     background: url('../img/https___tenzeniga.github.io_simon_game_-800x0b1024x768_402x302.jpg') center center/cover;
     }
-  &:nth-child(11) &-bg{
+  &:nth-child(12) &-bg{
     background: url('../img/forms.png') center center/cover;
     }
   &-bg{
