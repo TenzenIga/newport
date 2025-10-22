@@ -295,6 +295,8 @@ nav {
     background: url(src/static/img/pomodoro-tech.jpg) center center/cover; }
   .card:nth-child(5) .card-bg {
     background: url(src/static/img/blog.png) center center/cover; }
+  .card:nth-child(6) .card-bg {
+    background: url(src/static/img/movies.jpg) center center/cover; }
   .card-bg {
     width: 390px;
     height: 300px;
